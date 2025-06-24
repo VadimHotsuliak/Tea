@@ -17,6 +17,10 @@ ol {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -36,7 +40,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
 }
-
+/*Header*/
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -81,6 +85,7 @@ body {
   margin-left: 80px;
 }
 /******************MAIN*******************/
+/*Top*/
 .top {
   background-image: url(../images/top-bg.jpg);
   background-repeat: no-repeat;
@@ -124,10 +129,47 @@ body {
   max-width: 704px;
   margin: 150px auto;
 }
+/*Our-tea*/
+.our__tea {
+  padding-bottom: 150px;
+}
+.our__tea-title {
+  color: rgb(21, 22, 24);
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.our__tea-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.our__tea-item-inner {
+  max-width: 208px;
+}
+.our__tea-img {
+  width: 100%;
+}
+.our__tea-text {
+  color: rgb(0, 0, 0);
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 10px;
+}
+/*Mobile menu*/
 .mobile__menu {
   display: none;
 }
+/*****************@media (max-width: 999.98px) *******************/
 @media (max-width: 999.98px) {
+  /*Header*/
   .header__inner {
     min-height: auto;
   }
@@ -148,13 +190,23 @@ body {
     margin-top: 120px;
     margin-bottom: 135px;
   }
+  /*Our-tea*/
+  .our__tea {
+    padding-bottom: 120px;
+  }
+  .our__tea-list {
+    gap: 6px;
+    margin-top: 30px;
+  }
 }
+
+/*****************@media (max-width: 859.98px) *******************/
 @media (max-width: 859.98px) {
+  /*Header*/
   .logo {
     margin-left: auto;
     margin-right: auto;
   }
-
   .menu {
     order: -1;
     margin-right: 0;
@@ -162,13 +214,16 @@ body {
   .btn-menu {
     display: flex;
   }
-
   .menu__list {
     display: none;
   }
-
+  /*Our-tea*/
+  .our__tea-list {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 40px;
+  }
   /***Mobile menu**/
-
   .mobile__menu {
     display: none;
     background-color: #fff;
@@ -203,7 +258,6 @@ body {
     gap: 30px;
     padding: 60px 0;
   }
-
   .menu__link-mobile {
     color: rgb(0, 0, 0);
     font-family: Cormorant;
@@ -228,7 +282,6 @@ body {
     height: 2px;
     background-color: rgb(247, 242, 234);
   }
-
   .menu__mobile-link__about {
     color: rgb(0, 0, 0);
     font-family: Open Sans;
@@ -236,21 +289,18 @@ body {
     font-weight: 300;
     line-height: 18px;
   }
+  .mobile__user-actions {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    background-color: rgb(247, 242, 234);
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
 }
-
-.mobile__user-actions {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  background-color: rgb(247, 242, 234);
-  padding-top: 20px;
-  padding-bottom: 18px;
-}
-.user-actions__item-mobile {
-}
-.user-actions__link-mobile {
-}
+/*****************@media (max-width: 767.98px) *******************/
 @media (max-width: 767.98px) {
+  /*Header*/
   .header__inner {
     padding-left: 64px;
     padding-right: 64px;
@@ -259,16 +309,24 @@ body {
   .blockquote__text {
     max-width: 640px;
   }
+  /*Our-tea*/
+  .our__tea-list {
+    margin-top: 40px;
+  }
 }
+/*****************@media (max-width: 659.98px) *******************/
 @media (max-width: 659.98px) {
   .container {
     padding-left: 10px;
     padding-right: 10px;
   }
+  /*Header*/
   .header__inner {
     padding-left: 0;
     padding-right: 0;
   }
+
+  /*Top*/
   .top__inner-title {
     font-size: 40px;
     max-width: 450px;
@@ -280,15 +338,29 @@ body {
     margin-bottom: 60px;
   }
 }
+/*****************@media (max-width: 479.98px) *******************/
 @media (max-width: 479.98px) {
+  /*Header*/
   .logo {
     margin-right: 80px;
   }
   .logo-img {
     width: 40px;
   }
+  /*Our-tea*/
+  .our__tea {
+    padding-bottom: 60px;
+  }
+  .our__tea-list {
+    margin-top: 30px;
+  }
+  .our__tea-item-inner {
+    max-width: 160px;
+  }
 }
+/*****************@media (max-width: 359.98px) *******************/
 @media (max-width: 359.98px) {
+  /*Header*/
   .logo {
     margin-right: 50px;
   }
@@ -298,7 +370,7 @@ body {
   .user-actions__item-search {
     margin-left: 0;
   }
-
+  /*Top*/
   .top__inner {
     min-height: 367px;
   }
@@ -317,5 +389,19 @@ body {
     max-width: 340px;
     margin-top: 70px;
     margin-bottom: 80px;
+  }
+  /*Our-tea*/
+  .our__tea {
+    padding-bottom: 80px;
+  }
+  .our__tea-title {
+    font-size: 24px;
+  }
+
+  .our__tea-item-inner {
+    max-width: 150px;
+  }
+  .our__tea-list {
+    margin-top: 15px;
   }
 }
