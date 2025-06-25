@@ -180,7 +180,6 @@ body {
 }
 .testimonials__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
@@ -238,6 +237,7 @@ body {
     margin-top: 30px;
   }
   /*Testimonials*/
+
   .testimonials__list .testimonials__item:last-child {
     display: none;
   }
@@ -265,6 +265,12 @@ body {
     flex-wrap: wrap;
     gap: 6px;
     margin-top: 40px;
+  }
+  /*Testionials*/
+  .testimonials__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px 0;
   }
   /***Mobile menu**/
   .mobile__menu {
@@ -384,6 +390,14 @@ body {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+  /*Testionials*/
+  .testimonials__list {
+    gap: 30px 20px;
+  }
+  .testimonials__item {
+    max-width: 220px;
+    width: 100%;
+  }
 }
 /*****************@media (max-width: 479.98px) *******************/
 @media (max-width: 479.98px) {
@@ -404,7 +418,28 @@ body {
   .our__tea-item-inner {
     max-width: 160px;
   }
+  .our__tea-title {
+    font-size: 36px;
+  }
+
+  /*Testionials*/
+  .testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .testimonials__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .testimonials__list .testimonials__item:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .testimonials__item {
+    min-width: 100%;
+  }
 }
+
 /*****************@media (max-width: 359.98px) *******************/
 @media (max-width: 359.98px) {
   /*Header*/
