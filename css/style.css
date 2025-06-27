@@ -225,7 +225,10 @@ body {
   justify-content: space-between;
   gap: 55px 40px;
 }
+
 .our__blog-item {
+  flex: 1 1 350px; /* або min-width: 350px; */
+  max-width: 100%;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -235,6 +238,9 @@ body {
   max-width: 270px;
 }
 .blog__inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 252px;
 }
 .blog__inner-text__title {
@@ -245,7 +251,6 @@ body {
   line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 10px;
 }
 .blog__inner-text__author {
   color: rgb(0, 0, 0);
@@ -255,7 +260,6 @@ body {
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 48px;
 }
 .blog__inner-text__link {
   color: rgb(0, 0, 0);
@@ -265,6 +269,7 @@ body {
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
+  margin-top: auto;
 }
 .blog__inner-text__link span {
   width: 5px;
