@@ -608,7 +608,7 @@ body {
     margin-bottom: 30px;
   }
   .our__blog-list {
-    gap: 30px;
+    row-gap: 30px;
     justify-content: center;
     margin-bottom: 30px;
   }
