@@ -656,6 +656,8 @@ body {
 }
 
 .footer__address-icon {
+  pointer-events: none;
+  transition: fill 0.3s ease-in-out;
 }
 .footer__address-link {
   color: rgb(0, 0, 0);
@@ -665,6 +667,14 @@ body {
   line-height: 18px;
   letter-spacing: 0%;
   text-align: left;
+  transition: color 0.3s ease-in-out;
+}
+.footer__address-link:hover {
+  color: rgb(205, 157, 111);
+}
+
+.footer__address-link:hover + .footer__address-icon {
+  fill: rgb(205, 157, 111);
 }
 
 .footer__social-list {
