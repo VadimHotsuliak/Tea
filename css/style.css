@@ -162,11 +162,9 @@ body {
   gap: 40px;
   margin-top: 60px;
 }
-
 .our__tea-item-inner {
   max-width: 208px;
 }
-
 .our__tea-item-link:hover .our__tea-text,
 .our__tea-item-link:focus .our__tea-text {
   color: rgb(205, 157, 111);
@@ -176,7 +174,6 @@ body {
   display: block;
   z-index: 1;
 }
-
 .our__tea-text {
   color: rgb(0, 0, 0);
   font-family: Cormorant;
@@ -230,10 +227,7 @@ body {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-.container {
-}
-.our__blog-inner {
-}
+
 .our__blog-title {
   color: rgb(21, 22, 24);
   font-family: Cormorant;
@@ -347,8 +341,7 @@ body {
   padding-bottom: 100px;
   background-color: rgb(247, 242, 234);
 }
-.container {
-}
+
 .newsletter__title {
   color: rgb(21, 22, 24);
   font-size: 40px;
@@ -533,8 +526,7 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.products__item {
-}
+
 .products__item-link {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
@@ -722,11 +714,54 @@ body {
   justify-content: center;
   gap: 20px;
 }
-.footer__bootom-item {
+
+/*#####################BLACK-TEA-HTML####################*/
+.black-tea {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.footer__bootom-icon {
+.container {
 }
-/*Mobile menu*/
+.black-tea__inner {
+}
+.black-tea__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+.black-tea__item {
+  max-width: 250px;
+  max-height: auto;
+}
+.black-tea__link {
+}
+.black-tea__img-inner {
+}
+
+.black-tea__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.tea-name {
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.tea-price {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(205, 157, 111) !important;
+  text-align: center;
+}
+/*#####################MOBILE MENU####################*/
 .mobile__menu {
   display: none;
 }
