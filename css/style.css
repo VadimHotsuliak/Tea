@@ -166,9 +166,17 @@ body {
 .our__tea-item-inner {
   max-width: 208px;
 }
+
+.our__tea-item-link:hover .our__tea-text,
+.our__tea-item-link:focus .our__tea-text {
+  color: rgb(205, 157, 111);
+}
 .our__tea-img {
   width: 100%;
+  display: block;
+  z-index: 1;
 }
+
 .our__tea-text {
   color: rgb(0, 0, 0);
   font-family: Cormorant;
@@ -177,6 +185,7 @@ body {
   line-height: 1.2;
   text-align: center;
   margin-top: 10px;
+  transition: color 0.3s ease-in-out;
 }
 /*Testimonials*/
 .testimonials {
@@ -532,6 +541,11 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  transition: color 0.3s ease-in-out;
+}
+.products__item-link:hover,
+.products__item-link:focus {
+  color: rgb(205, 157, 111);
 }
 .company {
   margin-right: 155px;
@@ -549,14 +563,18 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.company__item {
-}
+
 .company__item-link {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  transition: color 0.3s ease-in-out;
+}
+.company__item-link:hover,
+.company__item-link:focus {
+  color: rgb(205, 157, 111);
 }
 .contacts__inner {
   display: flex;
@@ -632,9 +650,11 @@ body {
 }
 .footer__address-item {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   gap: 10px;
 }
+
 .footer__address-icon {
 }
 .footer__address-link {
@@ -646,8 +666,7 @@ body {
   letter-spacing: 0%;
   text-align: left;
 }
-.footer__social {
-}
+
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
@@ -656,10 +675,22 @@ body {
   margin-right: 20px;
 }
 .footer__social-item {
+  width: 22px;
+  height: 22px;
 }
 .footer__social-link {
+  width: 100%;
+  height: 100%;
+}
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus .footer__social-icon {
+  fill: rgb(205, 157, 111);
 }
 .footer__social-icon {
+  width: 100%;
+  height: 100%;
+  fill: #0f0f0f;
+  transition: fill 0.3s ease-in-out;
 }
 .footer__bootom {
   display: flex;
