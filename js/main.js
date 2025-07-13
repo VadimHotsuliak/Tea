@@ -11,8 +11,7 @@ closeMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('active');
 });
 
-// ⬇️ Закриваємо меню при кліку на будь-який пункт:
-menuItems.forEach(item => {
+ menuItems.forEach(item => {
   item.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
   });

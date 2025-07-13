@@ -804,6 +804,126 @@ body {
 .btn__down {
   display: none;
 }
+/*#####################White-TEA-HTML####################*/
+.white-tea {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.white-tea__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.white-tea__item {
+  max-width: 250px;
+  max-height: auto;
+}
+.white-tea__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.white__tea-name {
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.white__tea-price {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(205, 157, 111) !important;
+  text-align: center;
+}
+.btn__down {
+  display: none;
+}
+/*#####################Oolong-TEA-HTML####################*/
+.oolong-tea {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.oolong-tea__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.oolong-tea__item {
+  max-width: 250px;
+  max-height: auto;
+}
+.oolong-tea__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.oolong__tea-name {
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.oolong__tea-price {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(205, 157, 111) !important;
+  text-align: center;
+}
+.btn__down {
+  display: none;
+}
+/*#####################Puerh-TEA-HTML####################*/
+.puerh-tea {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.puerh-tea__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.puerh-tea__item {
+  max-width: 250px;
+  max-height: auto;
+}
+.puerh-tea__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.puerh__tea-name {
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.puerh__tea-price {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(205, 157, 111) !important;
+  text-align: center;
+}
+.btn__down {
+  display: none;
+}
 /*#####################MOBILE MENU####################*/
 .mobile__menu {
   display: none;
@@ -1067,8 +1187,20 @@ body {
   .black-tea__list {
     justify-content: space-around;
   }
+  /*#####################White-TEA-HTML####################*/
+  .white-tea__list {
+    justify-content: space-around;
+  }
   /*#####################Green-TEA-HTML####################*/
   .green-tea__list {
+    justify-content: space-around;
+  }
+  /*#####################Oolong-TEA-HTML####################*/
+  .oolong-tea__list {
+    justify-content: space-around;
+  }
+  /*#####################Puerh-TEA-HTML####################*/
+  .puerh-tea__list {
     justify-content: space-around;
   }
 }
@@ -1250,7 +1382,51 @@ body {
   .green-tea__item:nth-child(-n + 4) {
     display: list-item;
   }
+
+  /*#####################White-TEA-HTML####################*/
+  .btn__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .white-tea__item {
+    display: none;
+  }
+
+  .white-tea__item:nth-child(-n + 4) {
+    display: list-item;
+  }
+  /*#####################Oolong-TEA-HTML####################*/
+  .btn__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .oolong-tea__item {
+    display: none;
+  }
+
+  .oolong-tea__item:nth-child(-n + 4) {
+    display: list-item;
+  }
+  /*#####################Puerh-TEA-HTML####################*/
+  .btn__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .puerh-tea__item {
+    display: none;
+  }
+
+  .puerh-tea__item:nth-child(-n + 4) {
+    display: list-item;
+  }
 }
+
 /*****************@media (max-width: 479.98px) *******************/
 @media (max-width: 479.98px) {
   /*Header*/
