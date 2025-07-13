@@ -727,7 +727,7 @@ body {
 .black-tea__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   row-gap: 50px;
 }
 .black-tea__item {
@@ -761,6 +761,10 @@ body {
   color: rgb(205, 157, 111) !important;
   text-align: center;
 }
+.btn__down {
+  display: none;
+}
+
 /*#####################MOBILE MENU####################*/
 .mobile__menu {
   display: none;
@@ -1020,6 +1024,10 @@ body {
   .priorities__list {
     gap: 40px 133px;
   }
+  /*#####################BLACK-TEA-HTML####################*/
+  .black-tea__list {
+    justify-content: space-around;
+  }
 }
 /*****************@media (max-width: 767.98px) *******************/
 @media (max-width: 767.98px) {
@@ -1169,6 +1177,20 @@ body {
     justify-content: space-between;
 
     margin-top: 50px;
+  }
+  /*#####################BLACK-TEA-HTML####################*/
+
+  .btn__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .black-tea__item {
+    display: none;
+  }
+
+  .black-tea__item:nth-child(-n + 4) {
+    display: list-item;
   }
 }
 /*****************@media (max-width: 479.98px) *******************/
