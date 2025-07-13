@@ -1184,10 +1184,7 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 50px;
-    outline: none;
-    border: none;
-    background-color: inherit;
-    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
   }
   .black-tea__item {
     display: none;
