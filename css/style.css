@@ -764,7 +764,46 @@ body {
 .btn__down {
   display: none;
 }
-
+/*#####################Green-TEA-HTML####################*/
+.green-tea {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.green-tea__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.green-tea__item {
+  max-width: 250px;
+  max-height: auto;
+}
+.green-tea__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.green__tea-name {
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.green__tea-price {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(205, 157, 111) !important;
+  text-align: center;
+}
+.btn__down {
+  display: none;
+}
 /*#####################MOBILE MENU####################*/
 .mobile__menu {
   display: none;
@@ -1028,6 +1067,10 @@ body {
   .black-tea__list {
     justify-content: space-around;
   }
+  /*#####################Green-TEA-HTML####################*/
+  .green-tea__list {
+    justify-content: space-around;
+  }
 }
 /*****************@media (max-width: 767.98px) *******************/
 @media (max-width: 767.98px) {
@@ -1191,6 +1234,20 @@ body {
   }
 
   .black-tea__item:nth-child(-n + 4) {
+    display: list-item;
+  }
+  /*#####################Green-TEA-HTML####################*/
+  .btn__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .green-tea__item {
+    display: none;
+  }
+
+  .green-tea__item:nth-child(-n + 4) {
     display: list-item;
   }
 }
