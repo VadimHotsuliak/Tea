@@ -12,3 +12,6 @@ button.addEventListener("click", () => {
     button.style.display = "none"; // Ховаємо кнопку, коли все показано
   }
 });
+
+
+
