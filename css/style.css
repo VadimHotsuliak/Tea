@@ -1241,6 +1241,7 @@ body {
   gap: 5px;
 }
 .top__tea-left__btn {
+  color: #151618;
   padding: 5px;
   cursor: pointer;
   font-size: 18px;
@@ -1257,6 +1258,7 @@ body {
   cursor: default;
 }
 .top__tea-right__btn {
+  color: #151618;
   padding: 5px;
   cursor: pointer;
   font-size: 18px;
