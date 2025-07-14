@@ -1630,7 +1630,9 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  .top__tea-img {
+    margin-bottom: 30px;
+  }
   .top__text {
     align-items: center;
   }
@@ -1911,6 +1913,7 @@ body {
   .top__tea-img {
     max-width: 100%;
     min-width: 280px;
+    height: auto;
   }
 
   .top__tea-title {
