@@ -1907,6 +1907,7 @@ body {
   }
   /*#####################TEA-HTML####################*/
   .top__tea-img {
+    max-width: 100%;
     min-width: 280px;
   }
 
