@@ -1193,6 +1193,7 @@ body {
   display: none;
 }
 /*#####################TEA-HTML####################*/
+/*TOP TEA*/
 .top__tea {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1201,6 +1202,7 @@ body {
 }
 .top__tea-inner {
   display: flex;
+  justify-content: space-between;
 }
 .top__tea-img {
 }
@@ -1288,7 +1290,39 @@ body {
   color: rgb(205, 157, 111);
   border-color: rgb(205, 157, 111);
 }
+/*ABOUT TEA*/
+.about__tea {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about__tea .container {
+  background-color: #666;
+}
+.container {
+}
+.about__tea-inner {
+  display: flex;
+}
 
+.about__tea-text__wrapper {
+  max-width: 100%;
+  padding: 100px;
+}
+.about__tea-title {
+  font-family: "Cormorant";
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(205, 157, 111);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.about__tea-text {
+  font-family: "Cormorant";
+  font-size: 28px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 20px;
+}
 /*#####################MOBILE MENU####################*/
 .mobile__menu {
   display: none;
@@ -1639,6 +1673,9 @@ body {
   .top__tea-title {
     font-size: 25px;
     text-align: center;
+  }
+  .about__tea-text__wrapper {
+    padding: 30px;
   }
 }
 /*****************@media (max-width: 659.98px) *******************/
