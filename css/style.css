@@ -1675,6 +1675,7 @@ body {
     text-align: center;
   }
   .about__tea-text__wrapper {
+    max-width: 100%;
     padding: 30px;
   }
 }
