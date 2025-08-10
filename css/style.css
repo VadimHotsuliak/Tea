@@ -95,10 +95,13 @@ body {
 .cart-count {
   position: absolute;
   bottom: 0;
-  left: -8px;
-  font-size: 16px;
-  color: rgb(205, 157, 111);
+  left: -12px;
+  font-size: 12px;
   font-weight: 700;
+  color: rgb(0, 0, 0);
+  background-color: rgb(205, 157, 111);
+  border-radius: 40px;
+  padding: 0px 5px;
   z-index: 2;
   visibility: hidden;
   transition: visibility 0.3s, opacity 0.3s;
