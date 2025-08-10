@@ -88,6 +88,27 @@ body {
   gap: 0 20px;
 }
 
+.user-actions__item-cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  font-size: 16px;
+  color: rgb(205, 157, 111);
+  font-weight: 700;
+  z-index: 2;
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.cart-count.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .user-actions__item-search {
   margin-left: 80px;
 }
@@ -1237,38 +1258,38 @@ body {
   padding: 5px;
   font-size: 25px;
   cursor: default;
+  width: 85px;
+  text-align: center;
 }
 .top__tea-number__inner {
   display: flex;
-  gap: 5px;
+  gap: 12px;
 }
 .top__tea-left__btn {
-  color: #151618;
+  color: rgb(0, 0, 0, 0.6);
   padding: 5px;
   cursor: pointer;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
+  font-size: 22px;
 }
-.top__tea-left__btn:hover,
-.top__tea-left__btn:focus {
-  color: rgb(205, 157, 111);
-}
+
 .top__tea-number {
   display: block;
   font-size: 22px;
   color: rgb(205, 157, 111);
   cursor: default;
+  width: 24px;
+  text-align: center;
 }
 .top__tea-right__btn {
-  color: #151618;
+  color: rgb(0, 0, 0, 0.6);
   padding: 5px;
   cursor: pointer;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
+  font-size: 22px;
 }
-.top__tea-right__btn:hover,
-.top__tea-right__btn:focus {
+
+.top__tea-number-price {
   color: rgb(205, 157, 111);
+  font-size: 22px;
 }
 .top__buy-btn {
   max-width: 170px;
@@ -1304,7 +1325,7 @@ body {
 
 .about__tea-text__wrapper {
   max-width: 100%;
-  padding: 100px;
+  padding: 80px 40px;
 }
 .about__tea-title {
   font-family: "Cormorant";
@@ -1316,8 +1337,8 @@ body {
 }
 .about__tea-text {
   font-family: "Cormorant";
-  font-size: 28px;
-  line-height: 1.5;
+  font-size: 25px;
+  line-height: 1.2;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1859,6 +1880,11 @@ body {
 
   .puerh-tea__item:nth-child(-n + 4) {
     display: list-item;
+  }
+
+  /*#####################About-tea####################*/
+  .about__tea-text {
+    font-size: 18px;
   }
 }
 

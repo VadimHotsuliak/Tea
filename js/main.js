@@ -15,4 +15,21 @@ closeMenu.addEventListener('click', () => {
   item.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
   });
+document.addEventListener("DOMContentLoaded", () => {
+    const cartCount = document.querySelector(".cart-count");
+
+    window.updateCartCount = () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || {};
+        const uniqueItems = Object.keys(cart).length;
+
+        if (cartCount) {
+            cartCount.textContent = uniqueItems;
+            cartCount.classList.toggle("visible", uniqueItems > 0);
+        }
+    };
+
+    updateCartCount();
+});
+
+
 });
