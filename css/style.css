@@ -1254,6 +1254,7 @@ body {
   align-items: center;
   gap: 40px;
   margin-bottom: 50px;
+  width: 340px;
 }
 .top__tea-amount {
   border: 1px solid #36393e;
@@ -1291,8 +1292,21 @@ body {
 }
 
 .top__tea-number-price {
+  display: flex;
+  justify-content: center;
+  position: relative;
   color: rgb(205, 157, 111);
   font-size: 22px;
+  width: 85px;
+}
+.top__tea-number-price::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85px;
+  height: 1px;
+  background-color: rgb(205, 157, 111, 0.2);
 }
 .top__buy-btn {
   max-width: 170px;

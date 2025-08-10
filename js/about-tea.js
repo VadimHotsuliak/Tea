@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buyBtn?.addEventListener("click", () => {
         addToCart();
-        alert(`Додано ${baseGrams * currentUnits}g чаю за ${(basePrice * currentUnits).toFixed(2)}$`);
+        alert(`Added ${baseGrams * currentUnits}g tea for ${(basePrice * currentUnits).toFixed(2)}$`);
         currentUnits = 1;
         updateDisplay();
     });
